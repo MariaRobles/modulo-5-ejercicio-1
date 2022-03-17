@@ -91,7 +91,7 @@ function añadir(producto){
     } else {document.getElementById("prime").insertAdjacentHTML('beforeend', "<p>" + "Tiene gastos de envío" + "</p>");}
     var precioTotalProducto = carrito.price * carrito.count;
     if( precioTotalProducto > 50 ){
-        var descuento =  precioTotalProducto - (5/100);
+        var descuento = precioTotalProducto - (precioTotalProducto * (5/100));
         document.getElementById("total").insertAdjacentHTML('beforeend', "<p>" + descuento + " (5% descontado)" + "</p>");
     } else {
         document.getElementById("total").insertAdjacentHTML('beforeend', "<p>" + precioTotalProducto + "</p>");
