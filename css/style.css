@@ -1,0 +1,14 @@
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+#container h4 {
+    text-transform: uppercase;
+}
