@@ -78,6 +78,10 @@ for (carrito of carritos){
 // METERLO TODO EN UN HTML
 
 for (carrito of carritos){
+    añadir(carrito);
+}
+ 
+function añadir(producto){
     var elemento = "<p>" + carrito.name + "</p>";
     document.getElementById("nombre").insertAdjacentHTML('beforeend', "<p>" + carrito.name + "</p>");
     document.getElementById("cantidad").insertAdjacentHTML('beforeend', "<p>" + carrito.count + "</p>");
@@ -93,7 +97,6 @@ for (carrito of carritos){
         document.getElementById("total").insertAdjacentHTML('beforeend', "<p>" + precioTotalProducto + "</p>");
     }
 }
-
 
     
 
